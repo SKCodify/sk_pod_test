@@ -9,7 +9,11 @@ import Foundation
 
 public final class SKPodtest {
 
-    let name = "SKPodtest"
+    var name = "SKPodtest"
+    
+    public init(){
+        self.name = "SKPodtest"
+    }
     
     public func add(a: Int, b: Int) -> Int {
         return a + b

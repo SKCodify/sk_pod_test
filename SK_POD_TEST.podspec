@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 add and sub two integers in this test pod. Testing pod creation.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/SK_POD_TEST"
+  spec.homepage     = "https://github.com/SKCodify/sk_pod_test"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -40,7 +40,7 @@ add and sub two integers in this test pod. Testing pod creation.
   #
 
   spec.license      = "MIT"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -64,12 +64,13 @@ add and sub two integers in this test pod. Testing pod creation.
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "9.0"
+   spec.platform     = :ios
+   spec.platform     = :ios, "12.1"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "9.0"
+   spec.ios.deployment_target = "12.1"
   # spec.osx.deployment_target = "10.9"
+   spec.swift_version = "4.2"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
