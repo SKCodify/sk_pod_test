@@ -20,6 +20,7 @@
 		403A7D9F266A445300568A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403A7D9D266A445300568A09 /* Main.storyboard */; };
 		403A7DA1266A445A00568A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403A7DA0266A445A00568A09 /* Assets.xcassets */; };
 		403A7DA4266A445A00568A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403A7DA2266A445A00568A09 /* LaunchScreen.storyboard */; };
+		403A7DAE266A492D00568A09 /* SKPodtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A7DAD266A492D00568A09 /* SKPodtest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		403A7DA0266A445A00568A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		403A7DA3266A445A00568A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		403A7DA5266A445A00568A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403A7DAD266A492D00568A09 /* SKPodtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKPodtest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				403A7D62266A42F500568A09 /* SK_POD_TEST.h */,
 				403A7D63266A42F500568A09 /* Info.plist */,
+				403A7DAD266A492D00568A09 /* SKPodtest.swift */,
 			);
 			path = SK_POD_TEST;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				TargetAttributes = {
 					403A7D5E266A42F500568A09 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					403A7D67266A42F500568A09 = {
 						CreatedOnToolsVersion = 12.4;
@@ -331,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403A7DAE266A492D00568A09 /* SKPodtest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +521,7 @@
 		403A7D74266A42F500568A09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -531,6 +537,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sk.podtest.SK-POD-TEST";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -539,6 +546,7 @@
 		403A7D75266A42F500568A09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -562,6 +570,7 @@
 		403A7D77266A42F500568A09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SK_POD_TESTTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -579,6 +588,7 @@
 		403A7D78266A42F500568A09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SK_POD_TESTTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
